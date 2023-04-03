@@ -2,30 +2,51 @@
 The idea behind this application is to have a bus system that goes to every state
 
 The following API’s have been used In our implementation:
+
 Addpayment: Creates payment in database
+
 Bookingid: Information regarding that booking
+
 Createbooking: Creates booking in database
+
 get-price: Price of trip
+
 get-values: Finds if credentials are authorized
+
 pasttrips: Grabs past trips of user
+
 payment: Grabs payment options of user
+
 payments: Grabs payment options for removal
+
 removecard: Removes card from database
+
 post-data: Adds a new profile to the database
+
 profile: Grabs user information
+
 profileupdate: Updates user information
+
 refund: Refunds booking
+
 trip: Finds upcoming trips for planned locations
+
 upcoming: Grabs user’s upcoming trips
 
 # Features:
 
 Sign-in/ Registration: To use the app/website users need to login via email. It will be authorized by the data in RDS. If the user is not registered, they need to register and confirm their verification for SES to send them a confirmation email. 
+
 Booking: Users can book their tickets by specifying their start and end location and the number of tickets required. 
+
 Profile Update: In case the user needs to update their profile details, they can update it and RDS will update it as well. 
+
 Payments: For any transaction, the user needs to add a credit card beforehand in the payments section of the website. They can remove/add multiple cards or update the existing one.
+
 Travel History: Their past trips and transactional values will be stored in a separate RDS database.
+
 Refunds: Any future trips can be cancelled, and refund will be issued to customers. 
+
 Rewards: For any trip the users will get some rewards, depending on the range of their transaction. These rewards can be redeemed in future trips to get some discount.
 
 # Implementation:
